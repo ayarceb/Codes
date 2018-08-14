@@ -1,0 +1,28 @@
+ncks -O -h --mk_rec_dmn time LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xb.nc Xb_TPM10_merge.nc
+mv LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xb.nc .. 
+ncrcat -h Xb_TPM10_merge.nc LEMAORI_Test_Emissions_V2_tpm10-bu-a_201604*_xb.nc Xb_TPM10_Test_Emissions_V2.nc
+ncks -O -h --mk_rec_dmn time LEMAORI_Test_Emissions_V2_tpm25-bu-a_20160407_xb.nc Xb_TPM25_merge.nc
+mv LEMAORI_Test_Emissions_V2_tpm25-bu-a_20160407_xb.nc .. 
+ncrcat -h Xb_TPM25_merge.nc LEMAORI_Test_Emissions_V2_tpm25-bu-a_201604*_xb.nc Xb_TPM25_Test_Emissions_V2.nc
+ncks -O -h --mk_rec_dmn time LEMAORI_Test_Emissions_V2_tpm25-bu-a_20160407_xa.nc Xa_TPM25_merge.nc
+mv LEMAORI_Test_Emissions_V2_tpm25-bu-a_20160407_xa.nc .. 
+ncrcat -h Xa_TPM25_merge.nc LEMAORI_Test_Emissions_V2_tpm25-bu-a_201604*_xa.nc Xa_TPM25_Test_Emissions_V2.nc
+ncks -O -h --mk_rec_dmn time LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xa.nc Xa_TPM10_merge.nc
+mv LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xa.nc .. 
+ncrcat -h Xa_TPM10_merge.nc LEMAORI_Test_Emissions_V2_tpm10-bu-a_201604*_xa.nc Xa_TPM10_Test_Emissions_V2.nc
+
+
+Nuevo uso de tierra
+
+ncks -O -h --mk_rec_dmn time LE_2016_Vd_vd_20160101.nc Vd_merge.nc
+mv LE_2016_Vd_vd_20160101.nc .. 
+ncrcat -h Vd_merge.nc LE_2016_Vd_vd_2016*.nc Vd_2016_newLU.nc
+
+
+Viejo uso de tierra
+
+ncks -O -h --mk_rec_dmn time LE_2016_Vd_oldLU_vd_20160101.nc Vd_merge.nc
+mv LE_2016_Vd_oldLU_vd_20160101.nc .. 
+ncrcat -h Vd_merge.nc LE_2016_Vd_oldLU_vd_2016*.nc Vd_2016_oldLU.nc
+
+
