@@ -1,3 +1,5 @@
+Para concatenar temporalmente
+
 ncks -O -h --mk_rec_dmn time LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xb.nc Xb_TPM10_merge.nc
 mv LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xb.nc .. 
 ncrcat -h Xb_TPM10_merge.nc LEMAORI_Test_Emissions_V2_tpm10-bu-a_201604*_xb.nc Xb_TPM10_Test_Emissions_V2.nc
@@ -10,6 +12,7 @@ ncrcat -h Xa_TPM25_merge.nc LEMAORI_Test_Emissions_V2_tpm25-bu-a_201604*_xa.nc X
 ncks -O -h --mk_rec_dmn time LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xa.nc Xa_TPM10_merge.nc
 mv LEMAORI_Test_Emissions_V2_tpm10-bu-a_20160407_xa.nc .. 
 ncrcat -h Xa_TPM10_merge.nc LEMAORI_Test_Emissions_V2_tpm10-bu-a_201604*_xa.nc Xa_TPM10_Test_Emissions_V2.nc
+
 
 
 Nuevo uso de tierra
